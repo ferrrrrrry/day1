@@ -1,0 +1,1497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="topbar">
+        <div class="topbar__left">
+            <button class="topbar__btn">
+                <img src="img/header/metka.png" alt="" class="topbar__icon">
+                <span>Паттайя</span>
+                <img src="img/header/grommet-icons_next.png" alt="" class="topbar__arrow">
+            </button>
+        </div>
+
+        <div class="topbar__center topbar__dropdown-wrap">
+            <button class="topbar__btn" id="langBtn">
+                <img src="img/header/global.png" alt="" class="topbar__icon">
+                <span>RU</span>
+                <img src="img/header/grommet-icons_next.png" alt="" class="topbar__arrow">
+            </button>
+            <div class="dropdown" id="langDropdown">
+                <button class="dropdown__item dropdown__item--active">Русский</button>
+                <button class="dropdown__item">English</button>
+                <button class="dropdown__item">ภาษา</button>
+                <button class="dropdown__item">中文</button>
+                <button class="dropdown__item">Deutsch</button>
+                <button class="dropdown__item">Français</button>
+                <button class="dropdown__item">Español</button>
+                <button class="dropdown__item">Polski</button>
+                <button class="dropdown__item">Українська</button>
+                <button class="dropdown__item">Қазақша</button>
+            </div>
+        </div>
+
+        <div class="topbar__right">
+            <span class="topbar__hint">Валюта влияет только на отображение цен.<br>Оплата принимается в валюте партнёра по действующему обменному курсу системы.</span>
+            <button class="topbar__btn">
+                <img src="img/header/$.png" alt="" class="topbar__icon">
+                <span>USD $</span>
+                <img src="img/header/grommet-icons_next.png" alt="" class="topbar__arrow">
+            </button>
+        </div>
+    </div>
+
+    <header class="navbar">
+        <div class="navbar__top">
+            <a href="#" class="navbar__logo">
+                <img src="img/header/logotype.png" alt="Legat Thailand" class="navbar__logo-desktop">
+                <img src="img/header/logo-mobile.png" alt="Legat Thailand" class="navbar__logo-mobile">
+            </a>
+            <div class="navbar__actions">
+                <a href="#" class="navbar__social">
+                    <img src="img/header/wts-icon.png" alt="WhatsApp">
+                </a>
+                <a href="#" class="navbar__social">
+                    <img src="img/header/tg-icon.png" alt="Telegram">
+                </a>
+                <button class="btn-call">Позвонить</button>
+                <button class="navbar__burger" id="burgerBtn" aria-label="Меню">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+
+        <div class="navbar__bottom">
+            <nav class="navbar__nav">
+                <div class="nav-item nav-item--has-dropdown">
+                    <button class="nav-item__btn">Аренда <img src="img/header/grommet-icons_next.png" alt="" class="nav-item__arrow"></button>
+                    <div class="nav-dropdown">
+                        <a href="#" class="nav-dropdown__link">Аренда авто</a>
+                        <a href="#" class="nav-dropdown__link">Аренда байков / скутеров</a>
+                        <a href="#" class="nav-dropdown__link">Мотоциклы</a>
+                        <a href="#" class="nav-dropdown__link">Минивэны / микроавтобусы</a>
+                        <a href="#" class="nav-dropdown__link">Авто с водителем</a>
+                        <a href="#" class="nav-dropdown__link">Трансферы</a>
+                        <a href="#" class="nav-dropdown__link">Автодома / кемперы</a>
+                        <a href="#" class="nav-dropdown__link">Яхты и катера</a>
+                        <a href="#" class="nav-dropdown__link">Гидроциклы</a>
+                    </div>
+                </div>
+                <div class="nav-item nav-item--has-dropdown">
+                    <button class="nav-item__btn">Транспорт <img src="img/header/grommet-icons_next.png" alt="" class="nav-item__arrow"></button>
+                    <div class="nav-dropdown">
+                        <a href="#" class="nav-dropdown__link">Эконом</a>
+                        <a href="#" class="nav-dropdown__link">В-класс</a>
+                        <a href="#" class="nav-dropdown__link">SUV / 4×4</a>
+                        <a href="#" class="nav-dropdown__link">Бизнес</a>
+                        <a href="#" class="nav-dropdown__link">Премиум</a>
+                        <a href="#" class="nav-dropdown__link">Семейный</a>
+                        <a href="#" class="nav-dropdown__link">Групповой</a>
+                        <a href="#" class="nav-dropdown__link">Для дальних поездок</a>
+                    </div>
+                </div>
+                <div class="nav-item nav-item--has-dropdown">
+                    <button class="nav-item__btn">Цены <img src="img/header/grommet-icons_next.png" alt="" class="nav-item__arrow"></button>
+                    <div class="nav-dropdown">
+                        <a href="#" class="nav-dropdown__link">Цены по категориям</a>
+                        <a href="#" class="nav-dropdown__link">День / неделя / месяц</a>
+                        <a href="#" class="nav-dropdown__link">Что входит в стоимость</a>
+                        <a href="#" class="nav-dropdown__link">Депозит и возврат</a>
+                        <a href="#" class="nav-dropdown__link">Сезонные колебания</a>
+                        <a href="#" class="nav-dropdown__link">Сравнение классов</a>
+                    </div>
+                </div>
+                <div class="nav-item nav-item--has-dropdown">
+                    <button class="nav-item__btn">Правила и законы <img src="img/header/grommet-icons_next.png" alt="" class="nav-item__arrow"></button>
+                    <div class="nav-dropdown">
+                        <a href="#" class="nav-dropdown__link">ПДД Таиланда</a>
+                        <a href="#" class="nav-dropdown__link">Левостороннее движение</a>
+                        <a href="#" class="nav-dropdown__link">Права для иностранцев</a>
+                        <a href="#" class="nav-dropdown__link">Международные права</a>
+                        <a href="#" class="nav-dropdown__link">Штрафы</a>
+                        <a href="#" class="nav-dropdown__link">ДТП: что делать</a>
+                        <a href="#" class="nav-dropdown__link">Полиция и проверки</a>
+                        <a href="#" class="nav-dropdown__link">Алкоголь и вождение</a>
+                    </div>
+                </div>
+                <div class="nav-item nav-item--has-dropdown">
+                    <button class="nav-item__btn">Путеводитель <img src="img/header/grommet-icons_next.png" alt="" class="nav-item__arrow"></button>
+                    <div class="nav-dropdown">
+                        <a href="#" class="nav-dropdown__link">Передвижения по Таиланду</a>
+                        <a href="#" class="nav-dropdown__link">Лучшие маршруты</a>
+                        <a href="#" class="nav-dropdown__link">Поездки из Паттайи</a>
+                        <a href="#" class="nav-dropdown__link">Парковки и заправки</a>
+                        <a href="#" class="nav-dropdown__link">Особенности дорог</a>
+                        <a href="#" class="nav-dropdown__link">Советы туристам</a>
+                    </div>
+                </div>
+                <div class="nav-item nav-item--has-dropdown">
+                    <button class="nav-item__btn">Полезное <img src="img/header/grommet-icons_next.png" alt="" class="nav-item__arrow"></button>
+                    <div class="nav-dropdown">
+                        <a href="#" class="nav-dropdown__link">Новости и обновления</a>
+                        <a href="#" class="nav-dropdown__link">Советы по аренде</a>
+                        <a href="#" class="nav-dropdown__link">Ошибки туристов</a>
+                        <a href="#" class="nav-dropdown__link">Частые вопросы</a>
+                        <a href="#" class="nav-dropdown__link">Акции и предложения</a>
+                    </div>
+                </div>
+                <div class="nav-item nav-item--has-dropdown">
+                    <button class="nav-item__btn">Помощь <img src="img/header/grommet-icons_next.png" alt="" class="nav-item__arrow"></button>
+                    <div class="nav-dropdown">
+                        <a href="#" class="nav-dropdown__link">Онлайн–чат</a>
+                        <a href="#" class="nav-dropdown__link">Подбор с консьержем</a>
+                        <a href="#" class="nav-dropdown__link">Экстренная помощь 24/7</a>
+                        <a href="#" class="nav-dropdown__link">Страховые случаи</a>
+                    </div>
+                </div>
+                <div class="nav-item nav-item--has-dropdown">
+                    <button class="nav-item__btn">Контакты <img src="img/header/grommet-icons_next.png" alt="" class="nav-item__arrow"></button>
+                    <div class="nav-dropdown">
+                        <a href="#" class="nav-dropdown__link">WhatsApp</a>
+                        <a href="#" class="nav-dropdown__link">Telegram</a>
+                        <a href="#" class="nav-dropdown__link">Телефон</a>
+                        <a href="#" class="nav-dropdown__link">Email</a>
+                        <a href="#" class="nav-dropdown__link">Оставить заявку</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero__inner">
+            <div class="hero__content">
+                <h1 class="hero__title">Аренда любого транспорта в Таиланде <span class="hero__title-br"><br></span>через консьерж–сервис</h1>
+                <p class="hero__tags">Авто | Байки | Минивэны | Яхты</p>
+                <p class="hero__tags">Подбор | бесплатно | Прозрачные условия | Поддержка 24/7</p>
+                <button class="hero__btn">
+                    <span class="hero__btn-icon"></span>
+                    Подобрать транспорт
+                </button>
+                <p class="hero__note">Ответим в выбранном мессенджере за 5–10 минут</p>
+            </div>
+
+            <div class="hero__cards">
+                <div class="hero__card">
+                    <img src="img/hero/icon-rul.png" alt="" class="hero__card-icon">
+                    <p class="hero__card-title">Почему арендуют<br>через Legat Thailand</p>
+                    <ul class="hero__card-list">
+                        <li>Проверенные партнёры</li>
+                        <li>Без скрытых платежей</li>
+                        <li>Живой консьерж</li>
+                    </ul>
+                </div>
+                <div class="hero__card hero__card--right">
+                    <img src="img/hero/row-icon.png" alt="" class="hero__card-icon">
+                    <p class="hero__card-title">Премиальный сервис — доступный каждому туристу.</p>
+                    <p class="hero__card-text">Вы платите за аренду,<br>а не за риски.</p>
+                </div>
+            </div>
+
+            <img src="img/hero/herobackground.png" alt="" class="hero__vehicles">
+        </div>
+    </section>
+
+    <section class="how">
+        <div class="how__container">
+            <h2 class="how__title">Как мы подбираем транспорт — просто и безопасно</h2>
+            <p class="how__subtitle">Без анкет, без скрытых условий и без риска.<br>Вы оставляете контакт — дальше всё делает консьерж.</p>
+
+            <div class="how__items">
+                <div class="how__item">
+                    <div class="how__icon-wrap">
+                        <img src="img/who/icon-one.png" alt="" class="how__icon">
+                    </div>
+                    <h3 class="how__item-title">Оставляете заявку</h3>
+                    <p class="how__item-desc">Вы выбираете, как с вами связаться: WhatsApp, Telegram, звонок или email. Никаких длинных форм — только контакт для связи.</p>
+                    <p class="how__item-note">Обычно мы отвечаем в течение 5–10 минут.</p>
+                </div>
+
+                <div class="how__connector">
+                    <svg width="478" height="86" viewBox="0 0 478 86" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M478 1H282C258.804 1 240 19.804 240 43C240 66.196 221.196 85 198 85H0" stroke="#5778CB" stroke-width="2" stroke-dasharray="5 5"/>
+                    </svg>
+                </div>
+
+                <div class="how__item">
+                    <div class="how__icon-wrap">
+                        <img src="img/who/icon-two.png" alt="" class="how__icon">
+                    </div>
+                    <h3 class="how__item-title">Мы уточняем детали</h3>
+                    <p class="how__item-desc">Консьерж задаёт несколько коротких вопросов в чате или по телефону: даты, город, транспорт, бюджет, сроки, особые пожелания.</p>
+                    <p class="how__item-note">Подбор бесплатный. Мы сразу предлагаем 3–5 подходящих вариантов с условиями.</p>
+                </div>
+
+                <div class="how__connector how__connector--flip">
+                    <svg width="478" height="86" viewBox="0 0 478 86" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M478 1H282C258.804 1 240 19.804 240 43C240 66.196 221.196 85 198 85H0" stroke="#5778CB" stroke-width="2" stroke-dasharray="5 5"/>
+                    </svg>
+                </div>
+
+                <div class="how__item">
+                    <div class="how__icon-wrap">
+                        <img src="img/who/icom-three.png" alt="" class="how__icon">
+                    </div>
+                    <h3 class="how__item-title">Вы выбираете<br>и подтверждаете</h3>
+                    <p class="how__item-desc">Мы присылаем вам варианты с реальными ценами, депозитами и страховками. От нас — бронь, подача и поддержка.</p>
+                    <p class="how__item-note">Все условия — заранее. Подача авто в нужное место. Поддержка на связи 24/7.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="why">
+        <div class="why__container">
+            <div class="why__left">
+                <h2 class="why__title">Почему этот формат<br>безопаснее обычной аренды</h2>
+                <img src="img/why/car-why.png" alt="" class="why__car">
+            </div>
+            <div class="why__right">
+                <ul class="why__list">
+                    <li class="why__item">
+                        <img src="img/why/icon1.png" alt="" class="why__icon">
+                        <div>
+                            <p class="why__item-title">Проверенные партнёры</p>
+                            <p class="why__item-desc">Мы работаем только с компаниями и владельцами с подтверждёнными документами.</p>
+                        </div>
+                    </li>
+                    <li class="why__item">
+                        <img src="img/why/icon2.png" alt="" class="why__icon">
+                        <div>
+                            <p class="why__item-title">Прозрачные условия</p>
+                            <p class="why__item-desc">Депозит, страховка и ограничения известны до подтверждения.</p>
+                        </div>
+                    </li>
+                    <li class="why__item">
+                        <img src="img/why/icon3.png" alt="" class="why__icon">
+                        <div>
+                            <p class="why__item-title">Без языковых проблем</p>
+                            <p class="why__item-desc">Консьерж говорит на вашем языке и объясняет всё человеческим языком.</p>
+                        </div>
+                    </li>
+                    <li class="why__item">
+                        <img src="img/why/icon4.png" alt="" class="why__icon">
+                        <div>
+                            <p class="why__item-title">Поддержка при проблемах</p>
+                            <p class="why__item-desc">Поломка, ДТП, спор — мы не исчезаем, а решаем.</p>
+                        </div>
+                    </li>
+                </ul>
+                <div class="why__actions">
+                    <button class="why__btn-primary">Получить подбор транспорта</button>
+                    <button class="why__btn-secondary">Посмотреть категории<br>и ориентировочные цены</button>
+                </div>
+                <p class="why__note">Свяжемся в WhatsApp или Telegram за 5–10 минут</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="catalog">
+        <div class="catalog__head">
+            <h2 class="catalog__title">Выберите транспорт и сразу увидьте<br>реальную цену за день</h2>
+            <p class="catalog__subtitle">Цены фиксируются до подтверждения<br>Без скрытых условий и «мелкого шрифта»</p>
+        </div>
+
+        <!-- Скутеры и Байки -->
+        <div class="cat">
+            <div class="cat__header">
+                <div>
+                    <h3 class="cat__name">Скутеры и Байки</h3>
+                    <p class="cat__desc">Для города, пляжей и коротких поездок</p>
+                </div>
+                <div class="cat__header-right">
+                    <div class="cat__meta">
+                        <span class="cat__meta-label">минимальный срок аренды:</span>
+                        <span class="cat__meta-value">от 3 дней</span>
+                    </div>
+                    <div class="cat__meta">
+                        <span class="cat__meta-label">аренда от 30 дней:</span>
+                        <span class="cat__meta-value">от $4 / день</span>
+                    </div>
+                </div>
+            </div>
+            <div class="cat__slider-wrap">
+                <button class="cat__arrow cat__arrow--prev">&#8249;</button>
+                <div class="cat__slider">
+                    <div class="card">
+                        <div class="card__tags"><span class="card__tag">автомат</span><span class="card__tag">2 места</span></div>
+                        <div class="card__img-wrap"><img src="img/catalog/scooter/IMG_2784 (1).png" alt="" class="card__img"></div>
+                        <p class="card__name">Городские скутеры</p>
+                        <p class="card__subdesc">Для пляжа, коротких поездок и новичков</p>
+                        <p class="card__min">Минимальный срок: от 3 дней</p>
+                        <p class="card__month">Цена при аренде на месяц: $4 / день</p>
+                        <div class="card__price-row"><span class="card__price-label">Цена</span><span class="card__price">$5<span>/день</span></span></div>
+                        <button class="card__btn">Подобрать &rarr;</button>
+                    </div>
+                    <div class="card">
+                        <div class="card__tags"><span class="card__tag">автомат</span><span class="card__tag">объём: 150-200 см³</span><span class="card__tag">2 места</span></div>
+                        <div class="card__img-wrap"><img src="img/catalog/scooter/IMG_2784 (1)-1.png" alt="" class="card__img"></div>
+                        <p class="card__name">Усиленные скутеры</p>
+                        <p class="card__subdesc">Более мощные, лучше для поездок по острову</p>
+                        <p class="card__min">Минимальный срок: от 3 дней</p>
+                        <p class="card__month">Цена при аренде на месяц: $6 / день</p>
+                        <div class="card__price-row"><span class="card__price-label">Цена</span><span class="card__price">$7<span>/день</span></span></div>
+                        <button class="card__btn">Подобрать &rarr;</button>
+                    </div>
+                    <div class="card">
+                        <div class="card__tags"><span class="card__tag">автомат</span><span class="card__tag">объём: 300+ см³</span><span class="card__tag">2 места</span></div>
+                        <div class="card__img-wrap"><img src="img/catalog/scooter/IMG_2784 (1)-2.png" alt="" class="card__img"></div>
+                        <p class="card__name">Макси-скутеры</p>
+                        <p class="card__subdesc">Комфорт для дальних маршрутов</p>
+                        <p class="card__min">Минимальный срок: от 3 дней</p>
+                        <p class="card__month">Цена при аренде на месяц: $10 / день</p>
+                        <div class="card__price-row"><span class="card__price-label">Цена</span><span class="card__price">$12<span>/день</span></span></div>
+                        <button class="card__btn">Подобрать &rarr;</button>
+                    </div>
+                    <div class="card">
+                        <div class="card__tags"><span class="card__tag">механика</span><span class="card__tag">объём: 400+ см³</span><span class="card__tag">2 места</span></div>
+                        <div class="card__img-wrap"><img src="img/catalog/scooter/IMG_2784 (1)-3.png" alt="" class="card__img"></div>
+                        <p class="card__name">Спортивные мотоциклы</p>
+                        <p class="card__subdesc">Для опытных водителей</p>
+                        <p class="card__min">Минимальный срок: от 3 дней</p>
+                        <p class="card__month">Цена при аренде на месяц: $15 / день</p>
+                        <div class="card__price-row"><span class="card__price-label">Цена</span><span class="card__price">$18<span>/день</span></span></div>
+                        <button class="card__btn">Подобрать &rarr;</button>
+                    </div>
+                </div>
+                <button class="cat__arrow cat__arrow--next">&#8250;</button>
+            </div>
+        </div>
+
+        <!-- Легковые автомобили -->
+        <div class="cat">
+            <div class="cat__header">
+                <div>
+                    <h3 class="cat__name">Легковые автомобили</h3>
+                    <p class="cat__desc">Автомобили для города, семьи и путешествий</p>
+                </div>
+                <div class="cat__header-right">
+                    <div class="cat__meta">
+                        <span class="cat__meta-label">минимальный срок аренды:</span>
+                        <span class="cat__meta-value">от 3 дней</span>
+                    </div>
+                    <div class="cat__meta">
+                        <span class="cat__meta-label">аренда от 30 дней:</span>
+                        <span class="cat__meta-value">от $8 / день</span>
+                    </div>
+                </div>
+            </div>
+            <div class="cat__slider-wrap">
+                <button class="cat__arrow cat__arrow--prev">&#8249;</button>
+                <div class="cat__slider">
+                    <div class="card">
+                        <div class="card__tags"><span class="card__tag">эконом</span><span class="card__tag">автомат</span><span class="card__tag">4-5 мест</span></div>
+                        <div class="card__img-wrap"><img src="img/catalog/auto/IMG_2784 (1).png" alt="" class="card__img"></div>
+                        <p class="card__name">Эконом класс</p>
+                        <p class="card__subdesc">Для пляжа, коротких поездок и новичков</p>
+                        <p class="card__min">Минимальный срок: от 3 дней</p>
+                        <p class="card__month">Цена при аренде на месяц: $8 / день</p>
+                        <div class="card__price-row"><span class="card__price-label">Цена</span><span class="card__price">$10<span>/день</span></span></div>
+                        <button class="card__btn">Подобрать &rarr;</button>
+                    </div>
+                    <div class="card">
+                        <div class="card__tags"><span class="card__tag">седан</span><span class="card__tag">автомат</span><span class="card__tag">5 мест</span></div>
+                        <div class="card__img-wrap"><img src="img/catalog/auto/IMG_2784 (1)-1.png" alt="" class="card__img"></div>
+                        <p class="card__name">Компактные седаны</p>
+                        <p class="card__subdesc">Более мощные, лучше для поездок по острову</p>
+                        <p class="card__min">Минимальный срок: от 3 дней</p>
+                        <p class="card__month">Цена при аренде на месяц: $10 / день</p>
+                        <div class="card__price-row"><span class="card__price-label">Цена</span><span class="card__price">$12<span>/день</span></span></div>
+                        <button class="card__btn">Подобрать &rarr;</button>
+                    </div>
+                    <div class="card">
+                        <div class="card__tags"><span class="card__tag">автомат</span><span class="card__tag">5 мест</span><span class="card__tag">просторный салон</span></div>
+                        <div class="card__img-wrap"><img src="img/catalog/auto/IMG_2784 (1)-2.png" alt="" class="card__img"></div>
+                        <p class="card__name">Комфорт класс (В / С)</p>
+                        <p class="card__subdesc">Комфорт для дальних маршрутов</p>
+                        <p class="card__min">Минимальный срок: от 3 дней</p>
+                        <p class="card__month">Цена при аренде на месяц: $12 / день</p>
+                        <div class="card__price-row"><span class="card__price-label">Цена</span><span class="card__price">$15<span>/день</span></span></div>
+                        <button class="card__btn">Подобрать &rarr;</button>
+                    </div>
+                    <div class="card">
+                        <div class="card__tags"><span class="card__tag">седан</span><span class="card__tag">автомат</span><span class="card__tag">5 мест</span></div>
+                        <div class="card__img-wrap"><img src="img/catalog/auto/IMG_2784 (1)-3.png" alt="" class="card__img"></div>
+                        <p class="card__name">Премиум класс</p>
+                        <p class="card__subdesc">Для опытных водителей</p>
+                        <p class="card__min">Минимальный срок: от 3 дней</p>
+                        <p class="card__month">Цена при аренде на месяц: $15 / день</p>
+                        <div class="card__price-row"><span class="card__price-label">Цена</span><span class="card__price">$18<span>/день</span></span></div>
+                        <button class="card__btn">Подобрать &rarr;</button>
+                    </div>
+                    <div class="card">
+                        <div class="card__tags"><span class="card__tag">эконом</span><span class="card__tag">механика</span><span class="card__tag">5 мест</span></div>
+                        <div class="card__img-wrap"><img src="img/catalog/auto/IMG_2784 (1)-4.png" alt="" class="card__img"></div>
+                        <p class="card__name">Авто на механике</p>
+                        <p class="card__subdesc">Для опытных водителей</p>
+                        <p class="card__min">Минимальный срок: от 3 дней</p>
+                        <p class="card__month">Цена при аренде на месяц: $5 / день</p>
+                        <div class="card__price-row"><span class="card__price-label">Цена</span><span class="card__price">$9<span>/день</span></span></div>
+                        <button class="card__btn">Подобрать &rarr;</button>
+                    </div>
+                </div>
+                <button class="cat__arrow cat__arrow--next">&#8250;</button>
+            </div>
+        </div>
+
+        <!-- SUV и Минивэны -->
+        <div class="cat">
+            <div class="cat__header">
+                <div>
+                    <h3 class="cat__name">SUV и Минивэны</h3>
+                    <p class="cat__desc">Больше пространства и вместимости</p>
+                </div>
+                <div class="cat__header-right">
+                    <div class="cat__meta">
+                        <span class="cat__meta-label">минимальный срок аренды:</span>
+                        <span class="cat__meta-value">от 5 дней</span>
+                    </div>
+                    <div class="cat__meta">
+                        <span class="cat__meta-label">аренда от 30 дней:</span>
+                        <span class="cat__meta-value">от $17 / день</span>
+                    </div>
+                </div>
+            </div>
+            <div class="cat__slider-wrap">
+                <button class="cat__arrow cat__arrow--prev">&#8249;</button>
+                <div class="cat__slider">
+                    <div class="card">
+                        <div class="card__tags"><span class="card__tag">автомат</span><span class="card__tag">5 мест</span></div>
+                        <div class="card__img-wrap"><img src="img/catalog/miniven/IMG_2784 (1).png" alt="" class="card__img"></div>
+                        <p class="card__name">Компактные SUV</p>
+                        <p class="card__subdesc">Для пляжа, коротких поездок и новичков</p>
+                        <p class="card__min">Минимальный срок: от 5 дней</p>
+                        <p class="card__month">Цена при аренде на месяц: $17 / день</p>
+                        <div class="card__price-row"><span class="card__price-label">Цена</span><span class="card__price">$18<span>/день</span></span></div>
+                        <button class="card__btn">Подобрать &rarr;</button>
+                    </div>
+                    <div class="card">
+                        <div class="card__tags"><span class="card__tag">автомат</span><span class="card__tag">7 мест</span><span class="card__tag">повышенная мощность</span></div>
+                        <div class="card__img-wrap"><img src="img/catalog/miniven/IMG_2784 (1)-1.png" alt="" class="card__img"></div>
+                        <p class="card__name">Полноразмерные SUV / 4×4</p>
+                        <p class="card__subdesc">Более мощные, лучше для поездок по острову</p>
+                        <p class="card__min">Минимальный срок: от 5 дней</p>
+                        <p class="card__month">Цена при аренде на месяц: $18 / день</p>
+                        <div class="card__price-row"><span class="card__price-label">Цена</span><span class="card__price">$20<span>/день</span></span></div>
+                        <button class="card__btn">Подобрать &rarr;</button>
+                    </div>
+                    <div class="card">
+                        <div class="card__tags"><span class="card__tag">большой багажник</span><span class="card__tag">8-8 мест</span></div>
+                        <div class="card__img-wrap"><img src="img/catalog/miniven/IMG_2784 (1)-2.png" alt="" class="card__img"></div>
+                        <p class="card__name">Минивэны</p>
+                        <p class="card__subdesc">Комфорт для дальних маршрутов</p>
+                        <p class="card__min">Минимальный срок: от 5 дней</p>
+                        <p class="card__month">Цена при аренде на месяц: $21 / день</p>
+                        <div class="card__price-row"><span class="card__price-label">Цена</span><span class="card__price">$23<span>/день</span></span></div>
+                        <button class="card__btn">Подобрать &rarr;</button>
+                    </div>
+                    <div class="card">
+                        <div class="card__tags"><span class="card__tag">для групп</span><span class="card__tag">9-15 мест</span></div>
+                        <div class="card__img-wrap"><img src="img/catalog/miniven/IMG_2784 (1)-3.png" alt="" class="card__img"></div>
+                        <p class="card__name">Микроавтобусы</p>
+                        <p class="card__subdesc">Для опытных водителей</p>
+                        <p class="card__min">Минимальный срок: от 9 дней</p>
+                        <p class="card__month">Цена при аренде на месяц: $22 / день</p>
+                        <div class="card__price-row"><span class="card__price-label">Цена</span><span class="card__price">$25<span>/день</span></span></div>
+                        <button class="card__btn">Подобрать &rarr;</button>
+                    </div>
+                </div>
+                <button class="cat__arrow cat__arrow--next">&#8250;</button>
+            </div>
+        </div>
+
+        <!-- Водный транспорт -->
+        <div class="cat">
+            <div class="cat__header">
+                <div>
+                    <h3 class="cat__name">Водный транспорт</h3>
+                    <p class="cat__desc">Больше пространства и вместимости</p>
+                </div>
+                <div class="cat__header-right">
+                    <div class="cat__meta">
+                        <span class="cat__meta-label">минимальный срок аренды:</span>
+                        <span class="cat__meta-value">от 1 часа</span>
+                    </div>
+                </div>
+            </div>
+            <div class="cat__slider-wrap">
+                <button class="cat__arrow cat__arrow--prev">&#8249;</button>
+                <div class="cat__slider">
+                    <div class="card">
+                        <div class="card__tags"><span class="card__tag">1-2 места</span><span class="card__tag">только лицензированные операторы</span></div>
+                        <div class="card__img-wrap"><img src="img/catalog/whater-auto/IMG_2784 (1).png" alt="" class="card__img"></div>
+                        <p class="card__name">Гидроциклы</p>
+                        <p class="card__subdesc">Активный отдых на воде</p>
+                        <p class="card__min">Минимальный срок: от 1 часа</p>
+                        <div class="card__price-row"><span class="card__price-label">Цена</span><span class="card__price">$50<span>/день</span></span></div>
+                        <button class="card__btn">Подобрать &rarr;</button>
+                    </div>
+                    <div class="card">
+                        <div class="card__tags"><span class="card__tag">6-10 мест</span><span class="card__tag">экипаж и топливо по условиям аренды</span></div>
+                        <div class="card__img-wrap"><img src="img/catalog/whater-auto/IMG_2784 (1)-1.png" alt="" class="card__img"></div>
+                        <p class="card__name">Катамараны</p>
+                        <p class="card__subdesc">Для пляжа, коротких поездок и новичков</p>
+                        <p class="card__min">Минимальный срок: от 1 дня</p>
+                        <div class="card__price-row"><span class="card__price-label">Цена</span><span class="card__price">$200<span>/день</span></span></div>
+                        <button class="card__btn">Подобрать &rarr;</button>
+                    </div>
+                    <div class="card">
+                        <div class="card__tags"><span class="card__tag">8-10 мест</span><span class="card__tag">экипаж и топливо по условиям аренды</span></div>
+                        <div class="card__img-wrap"><img src="img/catalog/whater-auto/IMG_2784 (1)-2.png" alt="" class="card__img"></div>
+                        <p class="card__name">Катера (Speed Boat)</p>
+                        <p class="card__subdesc">Для пляжа, коротких поездок и новичков</p>
+                        <p class="card__min">Минимальный срок: от 1 дня</p>
+                        <div class="card__price-row"><span class="card__price-label">Цена</span><span class="card__price">$300<span>/день</span></span></div>
+                        <button class="card__btn">Подобрать &rarr;</button>
+                    </div>
+                    <div class="card">
+                        <div class="card__tags"><span class="card__tag">10-15 мест</span><span class="card__tag">экипаж и топливо по условиям аренды</span></div>
+                        <div class="card__img-wrap"><img src="img/catalog/whater-auto/IMG_2784 (1)-3.png" alt="" class="card__img"></div>
+                        <p class="card__name">Яхты</p>
+                        <p class="card__subdesc">Для пляжа, коротких поездок и новичков</p>
+                        <p class="card__min">Минимальный срок: от 1 дня</p>
+                        <div class="card__price-row"><span class="card__price-label">Цена</span><span class="card__price">$350<span>/день</span></span></div>
+                        <button class="card__btn">Подобрать &rarr;</button>
+                    </div>
+                </div>
+                <button class="cat__arrow cat__arrow--next">&#8250;</button>
+            </div>
+        </div>
+
+        <!-- Автодома и Кемперы -->
+        <div class="cat">
+            <div class="cat__header">
+                <div>
+                    <h3 class="cat__name">Автодома и Кемперы</h3>
+                    <p class="cat__desc">Путешествия по стране с ночёвками</p>
+                </div>
+                <div class="cat__header-right">
+                    <div class="cat__meta">
+                        <span class="cat__meta-label">минимальный срок аренды:</span>
+                        <span class="cat__meta-value">от 7 дней</span>
+                    </div>
+                    <div class="cat__meta">
+                        <span class="cat__meta-label">аренда от 30 дней:</span>
+                        <span class="cat__meta-value">от $65 / день</span>
+                    </div>
+                </div>
+            </div>
+            <div class="cat__slider-wrap">
+                <button class="cat__arrow cat__arrow--prev">&#8249;</button>
+                <div class="cat__slider">
+                    <div class="card">
+                        <div class="card__tags"><span class="card__tag">2-3 места</span></div>
+                        <div class="card__img-wrap"><img src="img/catalog/auto-home/IMG_2784 (1).png" alt="" class="card__img"></div>
+                        <p class="card__name">Компактные кемперы</p>
+                        <p class="card__subdesc">Для пляжа, коротких поездок и новичков</p>
+                        <p class="card__min">Минимальный срок: от 7 дней</p>
+                        <p class="card__month">Цена при аренде на месяц: $65 / день</p>
+                        <div class="card__price-row"><span class="card__price-label">Цена</span><span class="card__price">$75<span>/день</span></span></div>
+                        <button class="card__btn">Подобрать &rarr;</button>
+                    </div>
+                    <div class="card">
+                        <div class="card__tags"><span class="card__tag">4 места</span></div>
+                        <div class="card__img-wrap"><img src="img/catalog/auto-home/IMG_2784 (1)-1.png" alt="" class="card__img"></div>
+                        <p class="card__name">Семейные автодома</p>
+                        <p class="card__subdesc">Для пляжа, коротких поездок и новичков</p>
+                        <p class="card__min">Минимальный срок: от 7 дней</p>
+                        <p class="card__month">Цена при аренде на месяц: $70 / день</p>
+                        <div class="card__price-row"><span class="card__price-label">Цена</span><span class="card__price">$80<span>/день</span></span></div>
+                        <button class="card__btn">Подобрать &rarr;</button>
+                    </div>
+                    <div class="card">
+                        <div class="card__tags"><span class="card__tag">5-9 мест</span></div>
+                        <div class="card__img-wrap"><img src="img/catalog/auto-home/IMG_2784 (1)-2.png" alt="" class="card__img"></div>
+                        <p class="card__name">Большие автодома</p>
+                        <p class="card__subdesc">Для пляжа, коротких поездок и новичков</p>
+                        <p class="card__min">Минимальный срок: от 7 дней</p>
+                        <p class="card__month">Цена при аренде на месяц: $100 / день</p>
+                        <div class="card__price-row"><span class="card__price-label">Цена</span><span class="card__price">$120<span>/день</span></span></div>
+                        <button class="card__btn">Подобрать &rarr;</button>
+                    </div>
+                </div>
+                <button class="cat__arrow cat__arrow--next">&#8250;</button>
+            </div>
+        </div>
+
+        <p class="catalog__disclaimer">Указанные цены — реальные и применимые при соблюдении минимального срока аренды.<br>Финальная стоимость фиксируется до подтверждения и не меняется в процессе аренды.<br>Депозит и страховка указываются отдельно до отъезда.</p>
+    </section>
+
+    <section class="cta">
+        <img src="img/cta/background-cta.png" alt="" class="cta__bg">
+        <div class="cta__container">
+            <div class="cta__image">
+                <div class="cta__circles">
+                    <img src="img/cta/img1-cta.png" alt="" class="cta__keys">
+                </div>
+            </div>
+            <div class="cta__header">
+                <h2 class="cta__title">Не хотите разбираться<br>в классах и сроках?</h2>
+                <p class="cta__desc">Консьерж подберёт оптимальный вариант<br>и сразу скажет финальную цену за весь срок.</p>
+            </div>
+            <div class="cta__actions">
+                <button class="cta__btn">
+                    <span class="cta__btn-icon"></span>
+                    Получить подбор и цену
+                </button>
+                <p class="cta__note">Ответим в выбранном мессенджере за 5–10 минут</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="extras">
+        <div class="extras__container">
+            <div class="extras__left">
+                <h2 class="extras__title">Дополнительные<br>возможности</h2>
+                <p class="extras__desc">Цены фиксируются до подтверждения.<br>Все дополнительные опции подключаются только<br>по вашему желанию.</p>
+            </div>
+            <div class="extras__right">
+                <img src="img/cta/img2-cta.png" alt="" class="extras__img">
+            </div>
+            <p class="extras__note">Базовая цена аренды остаётся неизменной.<br>Ниже — дополнительные сервисы, которые можно<br>подключить для комфорта, безопасности и удобства.</p>
+        </div>
+    </section>
+
+    <section class="services">
+        <div class="services__container">
+            <div class="services__tabs" role="tablist">
+                <button class="services__tab services__tab--active" data-tab="scooters" role="tab">
+                    <img src="img/icons/Group 1000004327.svg" alt="" class="services__tab-icon">
+                    <span>Скутеры и байки</span>
+                </button>
+                <button class="services__tab" data-tab="cars" role="tab">
+                    <img src="img/icons/Group 1000004328.svg" alt="" class="services__tab-icon">
+                    <span>Автомобили</span>
+                </button>
+                <button class="services__tab" data-tab="suv" role="tab">
+                    <img src="img/icons/Group 1000004329.svg" alt="" class="services__tab-icon">
+                    <span>SUV и Минивэны</span>
+                </button>
+                <button class="services__tab" data-tab="driver" role="tab">
+                    <img src="img/icons/Group 1000004330.svg" alt="" class="services__tab-icon">
+                    <span>Авто с водителем</span>
+                </button>
+                <button class="services__tab" data-tab="yachts" role="tab">
+                    <img src="img/icons/Group 1000004331.svg" alt="" class="services__tab-icon">
+                    <span>Яхты и катера</span>
+                </button>
+                <button class="services__tab" data-tab="jetski" role="tab">
+                    <img src="img/icons/Group 1000004332.svg" alt="" class="services__tab-icon">
+                    <span>Гидроциклы</span>
+                </button>
+                <button class="services__tab" data-tab="rv" role="tab">
+                    <img src="img/icons/Group 1000004333.svg" alt="" class="services__tab-icon">
+                    <span>Автодома и кемперы</span>
+                </button>
+            </div>
+
+            <div class="services__panels">
+                <!-- Скутеры и байки -->
+                <div class="services__panel services__panel--active" id="panel-scooters">
+                    <button class="services__mob-tab" data-tab="scooters">
+                        <img src="img/icons/Group 1000004327.svg" alt="" class="services__tab-icon">
+                        <span>Скутеры и байки</span>
+                        <span class="services__mob-arrow"></span>
+                    </button>
+                    <div class="services__panel-body">
+                    <h2 class="services__title">Дополнительные возможности для скутеров и байков</h2>
+                    <div class="services__grid">
+                        <div class="services__col">
+                            <div class="services__item">
+                                <img src="img/icons/Group 1000004334.svg" alt="" class="services__item-icon">
+                                <div class="services__item-body">
+                                    <p class="services__item-title">Расширенная страховка</p>
+                                    <ul class="services__item-sub">
+                                        <li>Super CDW — полное покрытие без депозита</li>
+                                        <li>CDW — снижение суммы депозита</li>
+                                        <li>TP — защита от угона</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="services__item">
+                                <img src="img/icons/Group 1000004335.svg" alt="" class="services__item-icon">
+                                <div class="services__item-body">
+                                    <p class="services__item-title">Шлемы и экипировка</p>
+                                    <p class="services__item-desc">Полный и открытый шлем, перчатки и защитная куртка</p>
+                                </div>
+                            </div>
+                            <div class="services__item">
+                                <img src="img/icons/Group 1000004337.svg" alt="" class="services__item-icon">
+                                <div class="services__item-body">
+                                    <p class="services__item-title">Подача и возврат в удобном месте</p>
+                                    <p class="services__item-desc">Привезём и заберём транспорт по вашему адресу</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="services__col">
+                            <div class="services__item">
+                                <img src="img/icons/Group 1000004339.svg" alt="" class="services__item-icon">
+                                <div class="services__item-body">
+                                    <p class="services__item-title">Дополнительный замок/защита</p>
+                                    <p class="services__item-desc">Дисковый или цепной замок для дополнительной защиты</p>
+                                </div>
+                            </div>
+                            <div class="services__item">
+                                <img src="img/icons/Group 1000004340.svg" alt="" class="services__item-icon">
+                                <div class="services__item-body">
+                                    <p class="services__item-title">Помощь на дороге 24/7</p>
+                                    <p class="services__item-desc">Техническая помощь и эвакуация в любое время суток</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="services__date">Дано: от 11.02.2026 г.</p>
+                    </div>
+                </div>
+
+                <!-- Автомобили -->
+                <div class="services__panel" id="panel-cars">
+                    <button class="services__mob-tab" data-tab="cars">
+                        <img src="img/icons/Group 1000004328.svg" alt="" class="services__tab-icon">
+                        <span>Автомобили</span>
+                        <span class="services__mob-arrow"></span>
+                    </button>
+                    <div class="services__panel-body">
+                    <h2 class="services__title">Дополнительные возможности для автомобилей</h2>
+                    <div class="services__grid">
+                        <div class="services__col">
+                            <div class="services__item">
+                                <img src="img/icons/Group 1000004341.svg" alt="" class="services__item-icon">
+                                <div class="services__item-body">
+                                    <p class="services__item-title">Расширенная страховка</p>
+                                    <ul class="services__item-sub">
+                                        <li>Super CDW — полное покрытие без депозита</li>
+                                        <li>CDW — снижение суммы депозита</li>
+                                        <li>TP — защита от угона</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="services__item">
+                                <img src="img/icons/Group 1000004342.svg" alt="" class="services__item-icon">
+                                <div class="services__item-body">
+                                    <p class="services__item-title">Детские кресла</p>
+                                    <p class="services__item-desc">Группы 0–3, соответствуют стандартам безопасности</p>
+                                </div>
+                            </div>
+                            <div class="services__item">
+                                <img src="img/icons/Group 1000004343.svg" alt="" class="services__item-icon">
+                                <div class="services__item-body">
+                                    <p class="services__item-title">Дополнительный водитель</p>
+                                    <p class="services__item-desc">Включение второго водителя в страховой полис</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="services__col">
+                            <div class="services__item">
+                                <img src="img/icons/Group 1000004345.svg" alt="" class="services__item-icon">
+                                <div class="services__item-body">
+                                    <p class="services__item-title">Подача и возврат</p>
+                                    <p class="services__item-desc">Доставка и приём автомобиля по вашему адресу</p>
+                                </div>
+                            </div>
+                            <div class="services__item">
+                                <img src="img/icons/Group 1000004346.svg" alt="" class="services__item-icon">
+                                <div class="services__item-body">
+                                    <p class="services__item-title">Навигатор/держатель/зарядка</p>
+                                    <p class="services__item-desc">GPS-навигатор, мобильный держатель и зарядное устройство</p>
+                                </div>
+                            </div>
+                            <div class="services__item">
+                                <img src="img/icons/Group 1000004347.svg" alt="" class="services__item-icon">
+                                <div class="services__item-body">
+                                    <p class="services__item-title">Помощь на дороге 24/7</p>
+                                    <p class="services__item-desc">Техническая помощь и эвакуация в любое время суток</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="services__date">Дано: от 11.02.2026 г.</p>
+                    </div>
+                </div>
+
+                <!-- SUV и Минивэны -->
+                <div class="services__panel" id="panel-suv">
+                    <button class="services__mob-tab" data-tab="suv">
+                        <img src="img/icons/Group 1000004329.svg" alt="" class="services__tab-icon">
+                        <span>SUV и Минивэны</span>
+                        <span class="services__mob-arrow"></span>
+                    </button>
+                    <div class="services__panel-body">
+                    <h2 class="services__title">Дополнительные возможности для SUV и Минивэнов</h2>
+                    <div class="services__grid">
+                        <div class="services__col">
+                            <div class="services__item">
+                                <img src="img/icons/Group 1000004348.svg" alt="" class="services__item-icon">
+                                <div class="services__item-body">
+                                    <p class="services__item-title">Расширенная страховка для групп</p>
+                                    <ul class="services__item-sub">
+                                        <li>Super CDW — полное покрытие без депозита</li>
+                                        <li>CDW — снижение суммы депозита</li>
+                                        <li>TP — защита от угона</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="services__item">
+                                <img src="img/icons/Group 1000004349.svg" alt="" class="services__item-icon">
+                                <div class="services__item-body">
+                                    <p class="services__item-title">Детские кресла</p>
+                                    <p class="services__item-desc">Несколько кресел разных групп для всей семьи</p>
+                                </div>
+                            </div>
+                            <div class="services__item">
+                                <img src="img/icons/Group 1000004350.svg" alt="" class="services__item-icon">
+                                <div class="services__item-body">
+                                    <p class="services__item-title">Дополнительный багаж</p>
+                                    <p class="services__item-desc">Крепление на крышу и дополнительные боксы для вещей</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="services__col">
+                            <div class="services__item">
+                                <img src="img/icons/Group 1000004351.svg" alt="" class="services__item-icon">
+                                <div class="services__item-body">
+                                    <p class="services__item-title">Подача к месту сбора группы</p>
+                                    <p class="services__item-desc">Доставка к гостинице или заранее согласованному месту</p>
+                                </div>
+                            </div>
+                            <div class="services__item">
+                                <img src="img/icons/Group 1000004352.svg" alt="" class="services__item-icon">
+                                <div class="services__item-body">
+                                    <p class="services__item-title">Дополнительный водитель</p>
+                                    <p class="services__item-desc">Включение второго водителя в страховой полис</p>
+                                </div>
+                            </div>
+                            <div class="services__item">
+                                <img src="img/icons/Group 1000004354.svg" alt="" class="services__item-icon">
+                                <div class="services__item-body">
+                                    <p class="services__item-title">Помощь на дороге 24/7</p>
+                                    <p class="services__item-desc">Техническая помощь и эвакуация в любое время суток</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="services__date">Дано: от 11.02.2026 г.</p>
+                    </div>
+                </div>
+
+                <!-- Авто с водителем -->
+                <div class="services__panel" id="panel-driver">
+                    <button class="services__mob-tab" data-tab="driver">
+                        <img src="img/icons/Group 1000004330.svg" alt="" class="services__tab-icon">
+                        <span>Авто с водителем</span>
+                        <span class="services__mob-arrow"></span>
+                    </button>
+                    <div class="services__panel-body">
+                    <h2 class="services__title">Дополнительные возможности для аренды с водителем</h2>
+                    <div class="services__grid">
+                        <div class="services__col">
+                            <div class="services__item">
+                                <img src="img/icons/Group 1000004355.svg" alt="" class="services__item-icon">
+                                <div class="services__item-body">
+                                    <p class="services__item-title">Продление рабочего времени</p>
+                                    <p class="services__item-desc">Работа водителя сверх стандартного расписания</p>
+                                </div>
+                            </div>
+                            <div class="services__item">
+                                <img src="img/icons/Group 1000004357.svg" alt="" class="services__item-icon">
+                                <div class="services__item-body">
+                                    <p class="services__item-title">Межгород/дальние маршруты</p>
+                                    <p class="services__item-desc">Поездки между городами и на дальние расстояния</p>
+                                </div>
+                            </div>
+                            <div class="services__item">
+                                <img src="img/icons/Group 1000004359.svg" alt="" class="services__item-icon">
+                                <div class="services__item-body">
+                                    <p class="services__item-title">Гибкий маршрут</p>
+                                    <p class="services__item-desc">Остановки по запросу, изменение маршрута на ходу</p>
+                                </div>
+                            </div>
+                            <div class="services__item">
+                                <img src="img/icons/Group 1000004360.svg" alt="" class="services__item-icon">
+                                <div class="services__item-body">
+                                    <p class="services__item-title">Водитель с иностранным языком</p>
+                                    <p class="services__item-desc">Водители со знанием английского, русского и других языков</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="services__col">
+                            <div class="services__item">
+                                <img src="img/icons/Group 1000004362.svg" alt="" class="services__item-icon">
+                                <div class="services__item-body">
+                                    <p class="services__item-title">Детские кресла</p>
+                                    <p class="services__item-desc">Группы 0–3, соответствуют стандартам безопасности</p>
+                                </div>
+                            </div>
+                            <div class="services__item">
+                                <img src="img/icons/Group 1000004364.svg" alt="" class="services__item-icon">
+                                <div class="services__item-body">
+                                    <p class="services__item-title">Ожидание по запросу</p>
+                                    <p class="services__item-desc">Водитель ждёт вас в точках назначения по вашему запросу</p>
+                                </div>
+                            </div>
+                            <div class="services__item">
+                                <img src="img/icons/Group 1000004365.svg" alt="" class="services__item-icon">
+                                <div class="services__item-body">
+                                    <p class="services__item-title">Помощь на дороге 24/7</p>
+                                    <p class="services__item-desc">Экстренная помощь и поддержка в любое время</p>
+                                </div>
+                            </div>
+                            <div class="services__item">
+                                <img src="img/icons/Group 1000004367.svg" alt="" class="services__item-icon">
+                                <div class="services__item-body">
+                                    <p class="services__item-title">Почасовая тарификация</p>
+                                    <p class="services__item-desc">Оплата за фактически проведённое время с водителем</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="services__date">Дано: от 11.02.2026 г.</p>
+                    </div>
+                </div>
+
+                <!-- Яхты и катера -->
+                <div class="services__panel" id="panel-yachts">
+                    <button class="services__mob-tab" data-tab="yachts">
+                        <img src="img/icons/Group 1000004331.svg" alt="" class="services__tab-icon">
+                        <span>Яхты и катера</span>
+                        <span class="services__mob-arrow"></span>
+                    </button>
+                    <div class="services__panel-body">
+                    <h2 class="services__title">Дополнительные возможности для яхт и катеров</h2>
+                    <div class="services__grid">
+                        <div class="services__col">
+                            <div class="services__item">
+                                <img src="img/icons/Group 1000004369.svg" alt="" class="services__item-icon">
+                                <div class="services__item-body">
+                                    <p class="services__item-title">Экипаж и капитан</p>
+                                    <p class="services__item-desc">Профессиональный капитан и члены экипажа на борту</p>
+                                </div>
+                            </div>
+                            <div class="services__item">
+                                <img src="img/icons/Group 1000004371.svg" alt="" class="services__item-icon">
+                                <div class="services__item-body">
+                                    <p class="services__item-title">Топливо (фикс/по факту)</p>
+                                    <p class="services__item-desc">Топливо включено или оплата по фактическому расходу</p>
+                                </div>
+                            </div>
+                            <div class="services__item">
+                                <img src="img/icons/Group 1000004374.svg" alt="" class="services__item-icon">
+                                <div class="services__item-body">
+                                    <p class="services__item-title">Маршруты и острова</p>
+                                    <p class="services__item-desc">Плановые маршруты к популярным островам и бухтам</p>
+                                </div>
+                            </div>
+                            <div class="services__item">
+                                <img src="img/icons/Group 1000004376.svg" alt="" class="services__item-icon">
+                                <div class="services__item-body">
+                                    <p class="services__item-title">Кейтеринг и напитки</p>
+                                    <p class="services__item-desc">Приготовление еды на борту, закуски и напитки на выбор</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="services__col">
+                            <div class="services__item">
+                                <img src="img/icons/Group 1000004381.svg" alt="" class="services__item-icon">
+                                <div class="services__item-body">
+                                    <p class="services__item-title">Сноркелинг/рыбалка</p>
+                                    <p class="services__item-desc">Снаряжение для подводного плавания и рыболовные снасти</p>
+                                </div>
+                            </div>
+                            <div class="services__item">
+                                <img src="img/icons/Group 1000004384.svg" alt="" class="services__item-icon">
+                                <div class="services__item-body">
+                                    <p class="services__item-title">Фото- и видеосъёмка</p>
+                                    <p class="services__item-desc">Профессиональная съёмка на борту и под водой</p>
+                                </div>
+                            </div>
+                            <div class="services__item">
+                                <img src="img/icons/Group 1000004386.svg" alt="" class="services__item-icon">
+                                <div class="services__item-body">
+                                    <p class="services__item-title">Продление времени аренды</p>
+                                    <p class="services__item-desc">Увеличение срока аренды по согласованию с капитаном</p>
+                                </div>
+                            </div>
+                            <div class="services__item">
+                                <img src="img/icons/Group 1000004413.svg" alt="" class="services__item-icon">
+                                <div class="services__item-body">
+                                    <p class="services__item-title">Помощь на воде 24/7</p>
+                                    <p class="services__item-desc">Береговая охрана и служба спасения на воде</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="services__date">Дано: от 11.02.2026 г.</p>
+                    </div>
+                </div>
+
+                <!-- Гидроциклы -->
+                <div class="services__panel" id="panel-jetski">
+                    <button class="services__mob-tab" data-tab="jetski">
+                        <img src="img/icons/Group 1000004332.svg" alt="" class="services__tab-icon">
+                        <span>Гидроциклы</span>
+                        <span class="services__mob-arrow"></span>
+                    </button>
+                    <div class="services__panel-body">
+                    <h2 class="services__title">Дополнительные возможности для гидроциклов</h2>
+                    <div class="services__grid">
+                        <div class="services__col">
+                            <div class="services__item">
+                                <img src="img/icons/Group 1000004419.svg" alt="" class="services__item-icon">
+                                <div class="services__item-body">
+                                    <p class="services__item-title">Дополнительное время</p>
+                                    <p class="services__item-desc">Продление аренды на часы по фиксированной ставке</p>
+                                </div>
+                            </div>
+                            <div class="services__item">
+                                <img src="img/icons/Group 1000004429.svg" alt="" class="services__item-icon">
+                                <div class="services__item-body">
+                                    <p class="services__item-title">Защитная экипировка</p>
+                                    <p class="services__item-desc">Спасательные жилеты и гидрокостюмы</p>
+                                </div>
+                            </div>
+                            <div class="services__item">
+                                <img src="img/icons/Group 1000004431.svg" alt="" class="services__item-icon">
+                                <div class="services__item-body">
+                                    <p class="services__item-title">Инструктор</p>
+                                    <p class="services__item-desc">Персональный инструктор для обучения новичков</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="services__col">
+                            <div class="services__item">
+                                <img src="img/icons/Group 1000004433.svg" alt="" class="services__item-icon">
+                                <div class="services__item-body">
+                                    <p class="services__item-title">Групповые заезды</p>
+                                    <p class="services__item-desc">Аренда нескольких гидроциклов для компаний и групп</p>
+                                </div>
+                            </div>
+                            <div class="services__item">
+                                <img src="img/icons/Group 1000004435.svg" alt="" class="services__item-icon">
+                                <div class="services__item-body">
+                                    <p class="services__item-title">Фото/видео</p>
+                                    <p class="services__item-desc">Съёмка ваших заездов с берега или с дрона</p>
+                                </div>
+                            </div>
+                            <div class="services__item">
+                                <img src="img/icons/Group 1000004436.svg" alt="" class="services__item-icon">
+                                <div class="services__item-body">
+                                    <p class="services__item-title">Круглосуточная поддержка 24/7</p>
+                                    <p class="services__item-desc">Экстренная служба помощи на воде в любое время</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="services__date">Дано: от 11.02.2026 г.</p>
+                    </div>
+                </div>
+
+                <!-- Автодома и кемперы -->
+                <div class="services__panel" id="panel-rv">
+                    <button class="services__mob-tab" data-tab="rv">
+                        <img src="img/icons/Group 1000004333.svg" alt="" class="services__tab-icon">
+                        <span>Автодома и кемперы</span>
+                        <span class="services__mob-arrow"></span>
+                    </button>
+                    <div class="services__panel-body">
+                    <h2 class="services__title">Дополнительные возможности для автодомов и кемперов</h2>
+                    <div class="services__grid">
+                        <div class="services__col">
+                            <div class="services__item">
+                                <img src="img/icons/Group 1000004440.svg" alt="" class="services__item-icon">
+                                <div class="services__item-body">
+                                    <p class="services__item-title">Расширенная страховка</p>
+                                    <ul class="services__item-sub">
+                                        <li>Super CDW — полное покрытие без депозита</li>
+                                        <li>CDW — снижение суммы депозита</li>
+                                        <li>TP — защита от угона</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="services__item">
+                                <img src="img/icons/Group 1000004442.svg" alt="" class="services__item-icon">
+                                <div class="services__item-body">
+                                    <p class="services__item-title">Кухонный комплект</p>
+                                    <p class="services__item-desc">Полный набор посуды, плита и всё необходимое для готовки</p>
+                                </div>
+                            </div>
+                            <div class="services__item">
+                                <img src="img/icons/Group 1000004444.svg" alt="" class="services__item-icon">
+                                <div class="services__item-body">
+                                    <p class="services__item-title">Постельное бельё</p>
+                                    <p class="services__item-desc">Комплект постельного белья и полотенца для каждого</p>
+                                </div>
+                            </div>
+                            <div class="services__item">
+                                <img src="img/icons/Group 1000004446.svg" alt="" class="services__item-icon">
+                                <div class="services__item-body">
+                                    <p class="services__item-title">Туристическое оборудование</p>
+                                    <p class="services__item-desc">Складные стулья, столик и тент для привала</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="services__col">
+                            <div class="services__item">
+                                <img src="img/icons/Group 1000004448.svg" alt="" class="services__item-icon">
+                                <div class="services__item-body">
+                                    <p class="services__item-title">Дополнительный водитель</p>
+                                    <p class="services__item-desc">Включение второго водителя в страховой полис</p>
+                                </div>
+                            </div>
+                            <div class="services__item">
+                                <img src="img/icons/Group 1000004451.svg" alt="" class="services__item-icon">
+                                <div class="services__item-body">
+                                    <p class="services__item-title">Подготовка маршрута</p>
+                                    <p class="services__item-desc">Персональный план путешествия с кемпингами и стоянками</p>
+                                </div>
+                            </div>
+                            <div class="services__item">
+                                <img src="img/icons/Group 1000004453.svg" alt="" class="services__item-icon">
+                                <div class="services__item-body">
+                                    <p class="services__item-title">Помощь на дороге 24/7</p>
+                                    <p class="services__item-desc">Техническая помощь и эвакуация в любое время суток</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="services__date">Дано: от 11.02.2026 г.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="guarantee">
+        <div class="guarantee__top">
+            <div class="guarantee__container">
+                <div class="guarantee__image-wrap">
+                    <img src="img/guarantee/Frame 1321317556.png" alt="" class="guarantee__photo">
+                </div>
+                <div class="guarantee__content">
+                    <h2 class="guarantee__title">Что мы гарантируем<br>каждому клиенту</h2>
+                    <p class="guarantee__desc">Все дополнительные услуги подключаются только по вашему согласию. Их стоимость и условия подтверждаются до оплаты. Вы можете отказаться от любой опции без влияния на базовую цену аренды.</p>
+                    <ol class="guarantee__list">
+                        <li class="guarantee__item">
+                            <span class="guarantee__num">1</span>
+                            <span>Все условия известны <a href="#" class="guarantee__link">до подтверждения</a></span>
+                        </li>
+                        <li class="guarantee__item">
+                            <span class="guarantee__num">2</span>
+                            <span>Никаких скрытых платежей</span>
+                        </li>
+                        <li class="guarantee__item">
+                            <span class="guarantee__num">3</span>
+                            <span>Возможность задать вопросы до оплаты</span>
+                        </li>
+                        <li class="guarantee__item">
+                            <span class="guarantee__num">4</span>
+                            <span>Поддержка при спорных ситуациях</span>
+                        </li>
+                        <li class="guarantee__item">
+                            <span class="guarantee__num">5</span>
+                            <span>Консьерж сопровождает до завершения аренды</span>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+        <div class="guarantee__bottom">
+            <div class="guarantee__container guarantee__container--center">
+                <p class="guarantee__quote">Мы объясним условия до того,<br>как вы примете решение.</p>
+                <p class="guarantee__subquote">Если у вас есть сомнения — задайте вопрос консьержу.</p>
+                <button class="guarantee__btn">
+                    <span class="guarantee__btn-icon">→</span>
+                    Получить подбор с понятными условиями
+                </button>
+                <p class="guarantee__note">Ответим в WhatsApp или Telegram за 5–10 минут</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="about">
+        <div class="about__inner">
+            <div class="about__logo-row">
+                <img src="img/header/logotype.png" alt="Legat Thailand" class="about__logo">
+            </div>
+            <div class="about__body">
+                <div class="about__pin"></div>
+                <h2 class="about__title">
+                    <span class="about__title-brand">LEGAT THAILAND</span> КОНСЬЕРЖ<br>СЕРВИС АРЕНДЫ ТРАНСПОРТА
+                </h2>
+                <p class="about__lead">Мы помогаем туристам безопасно и удобно арендовать транспорт в Таиланде — без языковых барьеров и скрытых условий.</p>
+                <div class="about__divider"></div>
+                <p class="about__text">Legat Thailand — это консьерж-сервис, который объединяет проверенных партнёров по аренде транспорта и сопровождает клиента на всех этапах аренды.</p>
+                <p class="about__text">Мы не являемся прокатной компанией и не владеем транспортом. Наша задача — подобрать подходящий вариант, объяснить условия и обеспечить поддержку, чтобы аренда прошла спокойно и без неприятных сюрпризов.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- MISSION -->
+    <section class="mission">
+        <div class="mission__container">
+            <div class="mission__left">
+                <h2 class="mission__title">НАША МИССИЯ</h2>
+                <p class="mission__lead">Сделать аренду транспорта в Таиланде понятной, прозрачной и безопасной для туристов из любой страны.</p>
+                <p class="mission__sub">Мы считаем, что клиент должен:</p>
+                <ul class="mission__list">
+                    <li class="mission__item">
+                        <span class="mission__check"></span>
+                        понимать условия до оплаты
+                    </li>
+                    <li class="mission__item">
+                        <span class="mission__check"></span>
+                        знать, за что он платит
+                    </li>
+                    <li class="mission__item">
+                        <span class="mission__check"></span>
+                        иметь поддержку в сложной ситуации
+                    </li>
+                </ul>
+            </div>
+            <div class="mission__right">
+                <img src="img/mission/Vector 17.png" alt="" class="mission__connector">
+                <div class="mission__values">
+                    <div class="mission__value">
+                        <span class="mission__value-title">ПРОЗРАЧНОСТЬ</span>
+                        <p class="mission__value-desc">Мы заранее озвучиваем цену, депозит, страховку и ограничения.</p>
+                    </div>
+                    <div class="mission__value">
+                        <span class="mission__value-title">ОТВЕТСТВЕННОСТЬ</span>
+                        <p class="mission__value-desc">Если возникает вопрос или проблема — мы не исчезаем и не перекладываем ответственность.</p>
+                    </div>
+                    <div class="mission__value">
+                        <span class="mission__value-title">ПРОВЕРКА ПАРТНЁРОВ</span>
+                        <p class="mission__value-desc">Мы сотрудничаем только с компаниями и владельцами, которые предоставляют документы и реальные условия аренды.</p>
+                    </div>
+                    <div class="mission__value">
+                        <span class="mission__value-title">ЖИВОЕ ОБЩЕНИЕ</span>
+                        <p class="mission__value-desc">Вы общаетесь с консьержем, а не с автоматической системой.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="mission__phone-wrap">
+                <img src="img/mission/iPhone 14 Pro Space Black Mockup.png" alt="App mockup" class="mission__phone">
+            </div>
+        </div>
+    </section>
+
+    <!-- MOBILE MENU -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu__header">
+            <a href="#" class="navbar__logo">
+                <img src="img/header/logotype.png" alt="Legat Thailand">
+            </a>
+            <button class="mobile-menu__close" id="mobileMenuClose">&times;</button>
+        </div>
+
+        <nav class="mobile-menu__nav">
+            <div class="mobile-nav-item">
+                <button class="mobile-nav-item__btn">
+                    Аренда
+                    <img src="img/header/grommet-icons_next.png" alt="" class="mobile-nav-item__arrow">
+                </button>
+                <div class="mobile-nav-item__sub">
+                    <a href="#" class="mobile-nav-item__link">Аренда авто</a>
+                    <a href="#" class="mobile-nav-item__link">Аренда байков / скутеров</a>
+                    <a href="#" class="mobile-nav-item__link">Мотоциклы</a>
+                    <a href="#" class="mobile-nav-item__link">Минивэны и микроавтобусы</a>
+                    <a href="#" class="mobile-nav-item__link">Авто с водителем</a>
+                    <a href="#" class="mobile-nav-item__link">Трансферы</a>
+                    <a href="#" class="mobile-nav-item__link">Автодома и кемперы</a>
+                    <a href="#" class="mobile-nav-item__link">Яхты и катера</a>
+                    <a href="#" class="mobile-nav-item__link">Гидроциклы</a>
+                </div>
+            </div>
+            <div class="mobile-nav-item">
+                <button class="mobile-nav-item__btn">Транспорт <img src="img/header/grommet-icons_next.png" alt="" class="mobile-nav-item__arrow"></button>
+                <div class="mobile-nav-item__sub">
+                    <a href="#" class="mobile-nav-item__link">Эконом</a>
+                    <a href="#" class="mobile-nav-item__link">В-класс</a>
+                    <a href="#" class="mobile-nav-item__link">SUV / 4×4</a>
+                    <a href="#" class="mobile-nav-item__link">Бизнес</a>
+                    <a href="#" class="mobile-nav-item__link">Премиум</a>
+                    <a href="#" class="mobile-nav-item__link">Семейный</a>
+                    <a href="#" class="mobile-nav-item__link">Групповой</a>
+                    <a href="#" class="mobile-nav-item__link">Для дальних поездок</a>
+                </div>
+            </div>
+            <div class="mobile-nav-item">
+                <button class="mobile-nav-item__btn">Цены <img src="img/header/grommet-icons_next.png" alt="" class="mobile-nav-item__arrow"></button>
+                <div class="mobile-nav-item__sub">
+                    <a href="#" class="mobile-nav-item__link">Цены по категориям</a>
+                    <a href="#" class="mobile-nav-item__link">День / неделя / месяц</a>
+                    <a href="#" class="mobile-nav-item__link">Что входит в стоимость</a>
+                    <a href="#" class="mobile-nav-item__link">Депозит и возврат</a>
+                    <a href="#" class="mobile-nav-item__link">Сезонные колебания</a>
+                    <a href="#" class="mobile-nav-item__link">Сравнение классов</a>
+                </div>
+            </div>
+            <div class="mobile-nav-item">
+                <button class="mobile-nav-item__btn">Правила и законы <img src="img/header/grommet-icons_next.png" alt="" class="mobile-nav-item__arrow"></button>
+                <div class="mobile-nav-item__sub">
+                    <a href="#" class="mobile-nav-item__link">ПДД Таиланда</a>
+                    <a href="#" class="mobile-nav-item__link">Левостороннее движение</a>
+                    <a href="#" class="mobile-nav-item__link">Права для иностранцев</a>
+                    <a href="#" class="mobile-nav-item__link">Международные права</a>
+                    <a href="#" class="mobile-nav-item__link">Штрафы</a>
+                    <a href="#" class="mobile-nav-item__link">ДТП: что делать</a>
+                    <a href="#" class="mobile-nav-item__link">Полиция и проверки</a>
+                    <a href="#" class="mobile-nav-item__link">Алкоголь и вождение</a>
+                </div>
+            </div>
+            <div class="mobile-nav-item">
+                <button class="mobile-nav-item__btn">Путеводитель <img src="img/header/grommet-icons_next.png" alt="" class="mobile-nav-item__arrow"></button>
+                <div class="mobile-nav-item__sub">
+                    <a href="#" class="mobile-nav-item__link">Передвижения по Таиланду</a>
+                    <a href="#" class="mobile-nav-item__link">Лучшие маршруты</a>
+                    <a href="#" class="mobile-nav-item__link">Поездки из Паттайи</a>
+                    <a href="#" class="mobile-nav-item__link">Парковки и заправки</a>
+                    <a href="#" class="mobile-nav-item__link">Особенности дорог</a>
+                    <a href="#" class="mobile-nav-item__link">Советы туристам</a>
+                </div>
+            </div>
+            <div class="mobile-nav-item">
+                <button class="mobile-nav-item__btn">Полезное <img src="img/header/grommet-icons_next.png" alt="" class="mobile-nav-item__arrow"></button>
+                <div class="mobile-nav-item__sub">
+                    <a href="#" class="mobile-nav-item__link">Новости и обновления</a>
+                    <a href="#" class="mobile-nav-item__link">Советы по аренде</a>
+                    <a href="#" class="mobile-nav-item__link">Ошибки туристов</a>
+                    <a href="#" class="mobile-nav-item__link">Частые вопросы</a>
+                    <a href="#" class="mobile-nav-item__link">Акции и предложения</a>
+                </div>
+            </div>
+            <div class="mobile-nav-item">
+                <button class="mobile-nav-item__btn">Помощь <img src="img/header/grommet-icons_next.png" alt="" class="mobile-nav-item__arrow"></button>
+                <div class="mobile-nav-item__sub">
+                    <a href="#" class="mobile-nav-item__link">Онлайн–чат</a>
+                    <a href="#" class="mobile-nav-item__link">Подбор с консьержем</a>
+                    <a href="#" class="mobile-nav-item__link">Экстренная помощь 24/7</a>
+                    <a href="#" class="mobile-nav-item__link">Страховые случаи</a>
+                </div>
+            </div>
+            <div class="mobile-nav-item">
+                <button class="mobile-nav-item__btn">Контакты <img src="img/header/grommet-icons_next.png" alt="" class="mobile-nav-item__arrow"></button>
+                <div class="mobile-nav-item__sub">
+                    <a href="#" class="mobile-nav-item__link">WhatsApp</a>
+                    <a href="#" class="mobile-nav-item__link">Telegram</a>
+                    <a href="#" class="mobile-nav-item__link">Телефон</a>
+                    <a href="#" class="mobile-nav-item__link">Email</a>
+                    <a href="#" class="mobile-nav-item__link">Оставить заявку</a>
+                </div>
+            </div>
+        </nav>
+
+        <div class="mobile-menu__footer">
+            <button class="mobile-menu__currency">
+                <img src="img/header/$.png" alt="" class="topbar__icon">
+                <span>USD $</span>
+                <img src="img/header/grommet-icons_next.png" alt="" class="mobile-nav-item__arrow">
+            </button>
+            <p class="mobile-menu__hint">Валюта влияет только на отображение цен.<br>Оплата производится в валюте партнёра<br>или по курсу платёжной системы.</p>
+            <div class="mobile-menu__socials">
+                <a href="#"><img src="img/header/Wtsapp.png" alt="WhatsApp"></a>
+                <a href="#"><img src="img/header/Mail.png" alt="Email"></a>
+                <a href="#"><img src="img/header/Phone.png" alt="Phone"></a>
+                <a href="#"><img src="img/header/Telegram (1).png" alt="Telegram"></a>
+            </div>
+        </div>
+    </div>
+    <div class="mobile-menu__overlay" id="menuOverlay"></div>
+    <script>
+        // Mobile menu
+        const burgerBtn = document.getElementById('burgerBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const mobileMenuClose = document.getElementById('mobileMenuClose');
+        const menuOverlay = document.getElementById('menuOverlay');
+
+        function openMenu() {
+            mobileMenu.classList.add('mobile-menu--open');
+            menuOverlay.classList.add('mobile-menu__overlay--open');
+            document.body.style.overflow = 'hidden';
+        }
+        function closeMenu() {
+            mobileMenu.classList.remove('mobile-menu--open');
+            menuOverlay.classList.remove('mobile-menu__overlay--open');
+            document.body.style.overflow = '';
+        }
+
+        burgerBtn.addEventListener('click', openMenu);
+        mobileMenuClose.addEventListener('click', closeMenu);
+        menuOverlay.addEventListener('click', closeMenu);
+
+        // Mobile accordion
+        document.querySelectorAll('.mobile-nav-item__btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const item = btn.closest('.mobile-nav-item');
+                const sub = item.querySelector('.mobile-nav-item__sub');
+                if (!sub || !sub.children.length) return;
+                const isOpen = item.classList.contains('mobile-nav-item--open');
+                document.querySelectorAll('.mobile-nav-item--open').forEach(el => el.classList.remove('mobile-nav-item--open'));
+                if (!isOpen) item.classList.add('mobile-nav-item--open');
+            });
+        });
+
+        // Catalog sliders
+        document.querySelectorAll('.cat__slider-wrap').forEach(wrap => {
+            const slider = wrap.querySelector('.cat__slider');
+            const prev = wrap.querySelector('.cat__arrow--prev');
+            const next = wrap.querySelector('.cat__arrow--next');
+            const scrollAmount = () => slider.querySelector('.card').offsetWidth + 20;
+            prev.addEventListener('click', () => slider.scrollBy({ left: -scrollAmount(), behavior: 'smooth' }));
+            next.addEventListener('click', () => slider.scrollBy({ left: scrollAmount(), behavior: 'smooth' }));
+        });
+
+        // Nav dropdowns
+        document.querySelectorAll('.nav-item--has-dropdown').forEach(item => {
+            item.addEventListener('mouseenter', () => {
+                const drop = item.querySelector('.nav-dropdown');
+                if (drop && drop.children.length) drop.classList.add('nav-dropdown--open');
+            });
+            item.addEventListener('mouseleave', () => {
+                item.querySelector('.nav-dropdown')?.classList.remove('nav-dropdown--open');
+            });
+        });
+
+        // Services desktop tabs
+        document.querySelectorAll('.services__tab').forEach(tab => {
+            tab.addEventListener('click', () => {
+                const key = tab.dataset.tab;
+                document.querySelectorAll('.services__tab').forEach(t => t.classList.remove('services__tab--active'));
+                document.querySelectorAll('.services__panel').forEach(p => p.classList.remove('services__panel--active'));
+                tab.classList.add('services__tab--active');
+                document.getElementById('panel-' + key).classList.add('services__panel--active');
+            });
+        });
+
+        // Services mobile accordion
+        document.querySelectorAll('.services__mob-tab').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const panel = btn.closest('.services__panel');
+                const isActive = panel.classList.contains('services__panel--active');
+                document.querySelectorAll('.services__panel').forEach(p => p.classList.remove('services__panel--active'));
+                if (!isActive) panel.classList.add('services__panel--active');
+            });
+        });
+
+        const langBtn = document.getElementById('langBtn');
+        const langDropdown = document.getElementById('langDropdown');
+
+        langBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            langDropdown.classList.toggle('dropdown--open');
+        });
+
+        document.addEventListener('click', () => {
+            langDropdown.classList.remove('dropdown--open');
+        });
+    </script>
+</body>
+</html>
